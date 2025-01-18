@@ -7,3 +7,7 @@ metadata = MetaData()
 db = SQLAlchemy(metadata=metadata)
 
 # Add models here
+
+class Earthquake(db.models,SerializerMixin):
+    __tablename__ = "earthquakes"
+    
